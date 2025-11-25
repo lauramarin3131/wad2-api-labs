@@ -13,7 +13,7 @@ const TaskSchema = new Schema({
   userId: {
     type: Schema.Types.ObjectId,
     ref: 'User'
-  }
+  },
 });
 const dateValidator = (date) => {
   return date > new Date();

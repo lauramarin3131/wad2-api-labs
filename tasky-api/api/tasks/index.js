@@ -10,6 +10,7 @@ router.get('/', async (req, res) => {
     res.status(200).json(tasks);
 });
 
+
 // Get a user's tasks
 router.get('/user/:uid', async (req, res) => {
     const tasks = await Task.find({ userId: `${req.params.uid}`});
